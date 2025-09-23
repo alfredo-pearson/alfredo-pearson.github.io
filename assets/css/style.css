@@ -45,9 +45,23 @@ i {
 }
 
 h1 {
-    font-weight: 500;
-    color: var(--blue1);
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #076bce;
+    margin: 25px 0 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #076bce;
 }
+
+/* Special styling for section titles */
+.section h1, #research h1, #updates h1, #service h1, #Outreach h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 30px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid currentColor;
+}
+
 h2 {
     font-weight: 200;
     color: var(--blue3);
@@ -431,4 +445,28 @@ strong {
     font-size: 0.9em;
     color: #666;
     font-style: normal;
+}
+
+/* Alternative style for section titles if you prefer solid colors */
+.section h1, #research h1, #updates h1, #service h1, #Outreach h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 30px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid currentColor;
+}
+
+/* Add hover effect for section titles */
+.section h1:hover, #research h1:hover, #updates h1:hover, #service h1:hover, #Outreach h1:hover {
+    color: #0a8aff;
+    transition: color 0.3s ease;
+}
+
+/* Special styling for Research Interests */
+h1:first-of-type {
+    font-size: 3em;
+    background: linear-gradient(45deg, #076bce, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
