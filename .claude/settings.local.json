@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:mapmyvisitors.com)",
+      "WebFetch(domain:arxiv.org)",
+      "Bash(curl:*)"
+    ]
+  }
+}
