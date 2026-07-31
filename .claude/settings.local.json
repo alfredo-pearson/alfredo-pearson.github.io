@@ -3,7 +3,8 @@
     "allow": [
       "WebFetch(domain:mapmyvisitors.com)",
       "WebFetch(domain:arxiv.org)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "WebSearch"
     ]
   }
 }
