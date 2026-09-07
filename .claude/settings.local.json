@@ -4,7 +4,10 @@
       "WebFetch(domain:mapmyvisitors.com)",
       "WebFetch(domain:arxiv.org)",
       "Bash(curl:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
