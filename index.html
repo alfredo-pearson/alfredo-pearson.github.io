@@ -141,9 +141,24 @@
         <div style="display:flex;flex-direction: column;" id="research">
             <!-- Update Research -->
             <h1 style="font-size: 1.8em; color: #076bce; font-weight: 700;">Research</h1>
+            <div class="tag-legend">
+                <span class="tag tag-rl">RL</span>
+                <span class="tag tag-safety">Safety</span>
+                <span class="tag tag-manipulation">Manipulation</span>
+                <span class="tag tag-dexterous">Dexterous Hand</span>
+                <span class="tag tag-contact">Contact-rich</span>
+                <span class="tag tag-tactile">Tactile Sensing</span>
+                <span class="tag tag-vla">VLA / VLM</span>
+                <span class="tag tag-humanoid">Humanoid &amp; Locomotion</span>
+                <span class="tag tag-aiscientist">AI Scientist</span>
+                <span class="tag tag-agentic">Agentic</span>
+                <span class="tag tag-worldmodel">World Model</span>
+                <span class="tag tag-longhorizon">Long-horizon</span>
+                <span class="tag tag-perception">Perception</span>
+                <span class="tag tag-survey">Survey</span>
+            </div>
             <br>
-            <br>
-            
+
             <!-- real world RL paper -->
             <div class="research-card">
                 <div class="research-image">
@@ -162,12 +177,59 @@
                     <div class="research-venue">
                         <a href="https://www.corl.org/">10th Annual Conference on Robot Learning (CoRL) 2026</a>
                     </div>
+                    <div class="research-tags">
+                        <span class="tag tag-rl">RL</span>
+                        <span class="tag tag-safety">Safety</span>
+                        <span class="tag tag-manipulation">Manipulation</span>
+                        <span class="tag tag-dexterous">Dexterous Hand</span>
+                        <span class="tag tag-worldmodel">World Model</span>
+                    </div>
                     <div class="research-links">
                         <a href="https://arxiv.org/abs/2609.06009"><i class="fas fa-file-pdf"></i> Paper</a>
-                        <a href="https://whirl-dexterous.github.io/"><i class="fas fa-video"></i> Project Website</a>
+                        <a href="https://whirl-dexterous.github.io/"><i class="fas fa-globe"></i> Project Website</a>
                     </div>
                     <div class="research-abstract">
                         A real-world RL system for dexterous robot hands that turns human takeovers into a predictive risk signal. A world model learns when a human would intervene next, and the policy uses that prediction to avoid risky states.
+                    </div>
+                </div>
+            </div>
+
+            <!-- TacVLA paper -->
+            <div class="research-card">
+                <div class="research-image">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/images/tacvla.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="research-content">
+                    <div class="research-title">
+                        TacVLA: Contact-Aware Tactile Fusion for Robust Vision-Language-Action Manipulation
+                    </div>
+                    <div class="research-authors">
+                        Kaidi Zhang*, <b>Heng Zhang*</b>,
+                        <a href="https://zhengtongxu.github.io/website/">Zhengtong Xu</a>,
+                        <a href="https://www.zhiyuanzhang.net/">Zhiyuan Zhang</a>,
+                        MD Rakibul Islam Prince, Li Xiang, Xiaojing Han,
+                        <a href="https://yuhao-zhou.com/">Yuhao Zhou</a>,
+                        <a href="https://www.iit.it/it/people-details/-/people/arash-ajoudani">Arash Ajoudani</a>,
+                        <a href="https://scholar.google.com/citations?user=r-dJcIsAAAAJ&hl=en">Yu She</a>
+                        (* equal contribution)
+                    </div>
+                    <div class="research-venue">
+                        IROS, 2026
+                    </div>
+                    <div class="research-tags">
+                        <span class="tag tag-tactile">Tactile Sensing</span>
+                        <span class="tag tag-vla">VLA / VLM</span>
+                        <span class="tag tag-manipulation">Manipulation</span>
+                        <span class="tag tag-contact">Contact-rich</span>
+                    </div>
+                    <div class="research-links">
+                        <a href="https://arxiv.org/abs/2603.12665"><i class="fas fa-file-pdf"></i> Paper</a>
+                        <a href="https://sites.google.com/view/tacvla"><i class="fas fa-globe"></i> Website</a>
+                    </div>
+                    <div class="research-abstract">
+                        Enriches pretrained VLAs with tactile perception through contact-aware multimodal fusion for contact-rich manipulation.
                     </div>
                 </div>
             </div>
@@ -189,6 +251,12 @@
                     </div>
                     <div class="research-venue">
                         IEEE Robotics and Automation Letters (RA-L), 2024
+                    </div>
+                    <div class="research-tags">
+                        <span class="tag tag-rl">RL</span>
+                        <span class="tag tag-safety">Safety</span>
+                        <span class="tag tag-manipulation">Manipulation</span>
+                        <span class="tag tag-contact">Contact-rich</span>
                     </div>
                     <div class="research-links">
                         <a href="https://ieeexplore.ieee.org/abstract/document/10517611"><i class="fas fa-file-pdf"></i> Paper</a>
@@ -218,9 +286,13 @@
                     <div class="research-venue">
                         <a href="https://2026.ieee-humanoids.org/">IEEE Humanoids, 2026, under review</a>
                     </div>
+                    <div class="research-tags">
+                        <span class="tag tag-rl">RL</span>
+                        <span class="tag tag-manipulation">Manipulation</span>
+                    </div>
                     <div class="research-links">
                         <a href="https://arxiv.org/abs/2608.09762"><i class="fas fa-file-pdf"></i> Paper</a>
-                        <a href="https://hil-harc.github.io/"><i class="fas fa-video"></i> Project Website</a>
+                        <a href="https://hil-harc.github.io/"><i class="fas fa-globe"></i> Project Website</a>
                     </div>
                     <div class="research-abstract">
                         A real-world RL system that stabilizes real‑world training using a Centralized Training and Critic Decomposition setup, enabling large performance gains and far wider domain randomization.
@@ -245,6 +317,10 @@
                     </div>
                     <div class="research-venue">
                         <a href="https://openreview.net/forum?id=zvftmA4OiK">CVPR 2026 Workshop ScaleBot, 2026</a>
+                    </div>
+                    <div class="research-tags">
+                        <span class="tag tag-rl">RL</span>
+                        <span class="tag tag-vla">VLA / VLM</span>
                     </div>
                     <div class="research-links">
                         <a href="https://arxiv.org/abs/2603.09331"><i class="fas fa-file-pdf"></i> Paper</a>
@@ -282,46 +358,19 @@
                     <div class="research-venue">
                         IROS, 2026
                     </div>
+                    <div class="research-tags">
+                        <span class="tag tag-tactile">Tactile Sensing</span>
+                        <span class="tag tag-humanoid">Humanoid &amp; Locomotion</span>
+                        <span class="tag tag-manipulation">Manipulation</span>
+                    </div>
                     <div class="research-links">
                         <a href="https://arxiv.org/abs/2604.27224"><i class="fas fa-file-pdf"></i> Paper</a>
-                        <!-- <span style="color: #888;">Paper</span> -->
+                        <a href="https://github.com/PokuangZhou/tactile-aware-quadrupedal-loco-manipulation/tree/main"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://pokuangzhou.github.io/tactile-aware-quadrupedal-loco-manipulation/"><i class="fas fa-globe"></i> Website</a>
+                        <a href="https://wandb.ai/lemao/go2d1_low/reports/Low-Level--VmlldzoxNzY1OTc3MA?accessToken=ma2omlzq0bvytb7t0bbzxhezkwtb0aglaig9rxh7czu469k747m6l74t0eu14g47"><i class="fas fa-chart-line"></i> Training Log</a>
                     </div>
                     <div class="research-abstract">
                         A hierarchical training framework for learning tactile-aware quadrupedal loco-manipulation policies.
-                    </div>
-                </div>
-            </div>
-
-            <!-- TacVLA paper -->
-            <div class="research-card">
-                <div class="research-image">
-                    <video autoplay loop muted playsinline>
-                        <source src="assets/images/tacvla.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="research-content">
-                    <div class="research-title">
-                        TacVLA: Contact-Aware Tactile Fusion for Robust Vision-Language-Action Manipulation
-                    </div>
-                    <div class="research-authors">
-                        Kaidi Zhang*, <b>Heng Zhang*</b>,
-                        <a href="https://zhengtongxu.github.io/website/">Zhengtong Xu</a>,
-                        <a href="https://www.zhiyuanzhang.net/">Zhiyuan Zhang</a>,
-                        MD Rakibul Islam Prince, Li Xiang, Xiaojing Han,
-                        <a href="https://yuhao-zhou.com/">Yuhao Zhou</a>,
-                        <a href="https://www.iit.it/it/people-details/-/people/arash-ajoudani">Arash Ajoudani</a>,
-                        <a href="https://scholar.google.com/citations?user=r-dJcIsAAAAJ&hl=en">Yu She</a>
-                        (* equal contribution)
-                    </div>
-                    <div class="research-venue">
-                        IROS, 2026
-                    </div>
-                    <div class="research-links">
-                        <a href="https://arxiv.org/abs/2603.12665"><i class="fas fa-file-pdf"></i> Paper</a>
-                        <a href="https://sites.google.com/view/tacvla"><i class="fas fa-globe"></i> Website</a>
-                    </div>
-                    <div class="research-abstract">
-                        Enriches pretrained VLAs with tactile perception through contact-aware multimodal fusion for contact-rich manipulation.
                     </div>
                 </div>
             </div>
@@ -340,6 +389,12 @@
                     </div>
                     <div class="research-venue">
                         Robotics: Science and Systems (RSS), 2026, under review
+                    </div>
+                    <div class="research-tags">
+                        <span class="tag tag-agentic">Agentic</span>
+                        <span class="tag tag-vla">VLA / VLM</span>
+                        <span class="tag tag-manipulation">Manipulation</span>
+                        <span class="tag tag-longhorizon">Long-horizon</span>
                     </div>
                     <div class="research-links">
                         <a href="https://arxiv.org/abs/2602.01662"><i class="fas fa-file-pdf"></i> Paper</a>
@@ -368,6 +423,9 @@
                     <div class="research-venue">
                         IEEE Transactions on Robotics (T-RO), 2026, under review
                     </div>
+                    <div class="research-tags">
+                        <span class="tag tag-manipulation">Manipulation</span>
+                    </div>
                     <div class="research-links">
                         <a href="https://arxiv.org/abs/2602.03623"><i class="fas fa-file-pdf"></i> Paper</a>
                         <a href="https://www.youtube.com/watch?v=lgX2J-00TRM"><i class="fas fa-video"></i> Video</a>
@@ -392,6 +450,10 @@
                     </div>
                     <div class="research-venue">
                         IEEE-RAS International Conference on Humanoid Robots, Seoul, Korea, 2025
+                    </div>
+                    <div class="research-tags">
+                        <span class="tag tag-humanoid">Humanoid &amp; Locomotion</span>
+                        <span class="tag tag-vla">VLA / VLM</span>
                     </div>
                     <div class="research-links">
                         <a href="https://arxiv.org/abs/2508.04931/"><i class="fas fa-file-pdf"></i> Paper</a>
@@ -418,6 +480,12 @@
                     <div class="research-venue">
                         2026, under review
                     </div>
+                    <div class="research-tags">
+                        <span class="tag tag-safety">Safety</span>
+                        <span class="tag tag-vla">VLA / VLM</span>
+                        <span class="tag tag-manipulation">Manipulation</span>
+                        <span class="tag tag-contact">Contact-rich</span>
+                    </div>
                     <div class="research-links">
                         <a href="https://arxiv.org/abs/2510.17150"><i class="fas fa-file-pdf"></i> Paper</a>
                         <!-- <a href="https://github.com/omnivic/omnivic"><i class="fab fa-github"></i> Code</a> -->
@@ -441,6 +509,12 @@
                     </div>
                     <div class="research-venue">
                         IEEE The International Conference on Robotics and Automation (ICRA), 2026, under review
+                    </div>
+                    <div class="research-tags">
+                        <span class="tag tag-vla">VLA / VLM</span>
+                        <span class="tag tag-safety">Safety</span>
+                        <span class="tag tag-manipulation">Manipulation</span>
+                        <span class="tag tag-contact">Contact-rich</span>
                     </div>
                     <div class="research-links">
                         <a href="https://arxiv.org/abs/2601.15541"><i class="fas fa-file-pdf"></i> Paper</a>
@@ -466,6 +540,10 @@
                     <div class="research-venue">
                         2026, under review
                     </div>
+                    <div class="research-tags">
+                        <span class="tag tag-perception">Perception</span>
+                        <span class="tag tag-manipulation">Manipulation</span>
+                    </div>
                     <div class="research-links">
                         <a href="https://arxiv.org/abs/2509.11364"><i class="fas fa-file-pdf"></i> Paper</a>
                     </div>
@@ -486,6 +564,9 @@
                     </div>
                     <div class="research-venue">
                         The 40th Annual AAAI Conference on Artificial Intelligence, 2026, under review
+                    </div>
+                    <div class="research-tags">
+                        <span class="tag tag-aiscientist">AI Scientist</span>
                     </div>
                     <div class="research-links">
                         <a href="https://arxiv.org/abs/"><i class="fas fa-file-pdf"></i> Paper</a>
@@ -516,6 +597,12 @@
                     <div class="research-venue">
                         Biomimetic Intelligence and Robotics, 2026
                     </div>
+                    <div class="research-tags">
+                        <span class="tag tag-agentic">Agentic</span>
+                        <span class="tag tag-vla">VLA / VLM</span>
+                        <span class="tag tag-manipulation">Manipulation</span>
+                        <span class="tag tag-longhorizon">Long-horizon</span>
+                    </div>
                     <div class="research-links">
                         <a href="https://arxiv.org/abs/2506.08296"><i class="fas fa-file-pdf"></i> Paper</a>
                         <a href="https://anonymous.4open.science/r/HiBerNAC-0E2F"><i class="fas fa-code"></i> Code</a>
@@ -544,6 +631,12 @@
                     <div class="research-venue">
                         Robotics and Autonomous Systems (RAS), 2026
                     </div>
+                    <div class="research-tags">
+                        <span class="tag tag-rl">RL</span>
+                        <span class="tag tag-safety">Safety</span>
+                        <span class="tag tag-manipulation">Manipulation</span>
+                        <span class="tag tag-contact">Contact-rich</span>
+                    </div>
                     <div class="research-links">
                         <a href="https://www.sciencedirect.com/science/article/pii/S0921889026003350"><i class="fas fa-file-pdf"></i> Paper</a>
                         <a href="https://huggingface.co/papers/2503.00287"><i class="fas fa-brain"></i> Hugging Face</a>
@@ -571,6 +664,12 @@
                     </div>
                     <div class="research-venue">
                         IEEE Robotics and Automation Letters (RA-L), under review
+                    </div>
+                    <div class="research-tags">
+                        <span class="tag tag-rl">RL</span>
+                        <span class="tag tag-safety">Safety</span>
+                        <span class="tag tag-manipulation">Manipulation</span>
+                        <span class="tag tag-contact">Contact-rich</span>
                     </div>
                     <div class="research-links">
                         <a href="https://arxiv.org/abs/2503.21989"><i class="fas fa-file-pdf"></i> Paper</a>
@@ -604,6 +703,11 @@
                     <div class="research-venue">
                         Nature Machine Intelligence, under review
                     </div>
+                    <div class="research-tags">
+                        <span class="tag tag-aiscientist">AI Scientist</span>
+                        <span class="tag tag-agentic">Agentic</span>
+                        <span class="tag tag-survey">Survey</span>
+                    </div>
                     <div class="research-links">
                         <a href="https://arxiv.org/abs/2503.22444"><i class="fas fa-file-pdf"></i> Paper</a>
                         <a href="https://huggingface.co/papers/2503.22444"><i class="fas fa-brain"></i> Hugging Face</a>
@@ -635,6 +739,13 @@
                     <div class="research-venue">
                         Under review, npj Robotics, 2026
                     </div>
+                    <div class="research-tags">
+                        <span class="tag tag-survey">Survey</span>
+                        <span class="tag tag-rl">RL</span>
+                        <span class="tag tag-safety">Safety</span>
+                        <span class="tag tag-manipulation">Manipulation</span>
+                        <span class="tag tag-contact">Contact-rich</span>
+                    </div>
                     <div class="research-links">
                         <a href="https://arxiv.org/abs/2512.11908"><i class="fas fa-file-pdf"></i> Paper</a>
                     </div>
@@ -658,6 +769,10 @@
                     </div>
                     <div class="research-venue">
                         IEEE Transactions on Intelligent Transportation Systems, 2025
+                    </div>
+                    <div class="research-tags">
+                        <span class="tag tag-survey">Survey</span>
+                        <span class="tag tag-perception">Perception</span>
                     </div>
                     <div class="research-links">
                         <a href="https://ieeexplore.ieee.org/abstract/document/11005698"><i class="fas fa-file-pdf"></i> Paper</a>
